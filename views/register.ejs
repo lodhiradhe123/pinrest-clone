@@ -1,0 +1,63 @@
+<% include ./partials/header.ejs %>
+
+<div
+  class="w-full h-screen bg-zinc-700 bg-cover bg-center bg-no-repeate flex items-center justify-center"
+>
+  <div class="w-96 h-[40vw] bg-zinc-100 px-2 rounded-3xl text-bold">
+    <h1
+      class="py-10 w-full text-4xl leading-none capitalize tracking-tighter items-center text-center font-semibold text-zinc-700"
+    >
+      Register
+    </h1>
+    <form action="/register" method="post">
+      <input
+        class="border-2 block w-full px-3 py-2 mt-2 rounded-3xl"
+        type="text"
+        name="username"
+        placeholder="username"
+        id=""
+      />
+
+      <input
+        class="border-2 block w-full px-3 py-2 mt-2 rounded-3xl"
+        type="email"
+        name="email"
+        placeholder="enter your email"
+        id=""
+      />
+      <input
+        class="border-2 block w-full px-3 py-2 mt-2 rounded-3xl"
+        type="number"
+        name="contact"
+        placeholder="enter your number"
+        id=""
+      />
+      <input
+        class="border-2 block w-full px-3 py-2 mt-2 rounded-3xl"
+        type="password"
+        name="password"
+        placeholder="password"
+        id=""
+      />
+      <input
+        class="border-2 block w-full px-3 py-2 bg-blue-500 text-white rounded-full mt-2 rounded-1xl"
+        type="submit"
+        name=""
+        id=""
+      />
+
+      <p class="w-full text-zinc-500 font-semibold mt-3 px-7 text-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A similique
+        eaque recusandae incidunt
+      </p>
+      <a
+        class="inline-block w-full font-bold text-zinc-500 text-center mt-[1vw]"
+        href="/"
+      >
+        login existing account
+      </a>
+    </form>
+  </div>
+</div>
+
+<% include ./partials/footer.ejs %>
